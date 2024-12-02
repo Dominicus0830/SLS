@@ -3941,8 +3941,8 @@ textarea.form-control-lg {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
 }
 .navbar > .container,
 .navbar > .container-fluid,
@@ -3956,6 +3956,29 @@ textarea.form-control-lg {
   align-items: center;
   justify-content: space-between;
 }
+
+.navbar-sub {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.navbar-sub > .container,
+.navbar-sub > .container-fluid,
+.navbar-sub > .container-sm,
+.navbar-sub > .container-md,
+.navbar-sub > .container-lg,
+.navbar-sub > .container-xl,
+.navbar-sub > .container-xxl {
+  display: flex;
+  flex-wrap: inherit;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .navbar-brand {
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
@@ -3964,6 +3987,7 @@ textarea.form-control-lg {
   text-decoration: none;
   white-space: nowrap;
 }
+
 .navbar-nav {
   display: flex;
   flex-direction: column;
@@ -4219,7 +4243,7 @@ textarea.form-control-lg {
 }
 
 .navbar-dark .navbar-brand {
-  color: #fff;
+  color: #A7C134
 }
 .navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
   color: #fff;
@@ -7414,6 +7438,10 @@ textarea.form-control-lg {
 
 .bg-light {
   background-color: #f8f9fa !important;
+}
+
+.bg-schoolgreen {
+  background-color: #A7C134 !important;
 }
 
 .bg-dark {

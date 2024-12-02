@@ -18,7 +18,7 @@
 <body>
 
     <!-- Responsive navbar-->
-    <nav class="navbar navbar-expand-lg bg-light static-top ">
+    <nav class="navbar navbar-expand-lg bg-schoolgreen static-top ">
         <div class="container px-5">
             <%
 					// 세션값 가져오기
@@ -36,11 +36,11 @@
 					// 세션값 가져오기
 
 					if (id == null){%>
-                    <li class="nav-item"><a class="nav-link" href="/member/register">Register</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/member/login">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/member/register">회원가입</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/member/login">로그인</a></li>
                     <%}else{%>
-                    <li class="nav-item"><a class="nav-link" href="/member/my_page">MyPage</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/member/logout">Logout</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/member/my_page">마이페이지</a></li>
+                    <li class<li class="nav-item"><a class="nav-link" href="/member/logout">로그아웃</a></li>
                     <%}
 					%>
 
@@ -53,32 +53,35 @@
     <!-- Navigation-->
     <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
         <div class="container">
-            <a class="btn" style="background-color: #e3f2fd; color: dodgerblue;" href="/book/unified_search">자료 검색</a>
+            <!-- 로고 추가 -->
+            <a class="navbar-brand d-flex align-items-center" href="/">
+                <img src="http://localhost:8080/assets/img/schoolFullLogo.png" alt="School Logo" style="height: 90px; margin-right: 18px;">
+            </a>
+
+            <!-- 기존 버튼들 -->
+            <a class="btn" style="background-color: #e3f2fd; color: black;" href="/book/unified_search">자료 검색</a>
 
             <div class="dropdown show">
-                <a class="btn dropdown-toggle" style="background-color: #e3f2fd; color: dodgerblue;" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="btn dropdown-toggle" style="background-color: #e3f2fd; color: black;" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     신청 / 참여
                 </a>
-
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                     <%
-						// 세션값 가져오기
-						if (id == null){%>
+                        if (id == null) {
+                    %>
                     <a class="dropdown-item disabled" href="/member/member_hope">희망 도서 신청</a>
                     <a class="dropdown-item" href="/board/unified_search">자유 게시판</a>
-                    <%}else{%>
+                    <% } else { %>
                     <a class="dropdown-item" href="/member/member_hope">희망 도서 신청</a>
                     <a class="dropdown-item" href="/board/unified_search">자유 게시판</a>
-                    <%}
-					%>
+                    <% } %>
                 </div>
             </div>
 
             <div class="dropdown show">
-                <a class="btn dropdown-toggle" style="background-color: #e3f2fd; color: dodgerblue;" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="btn dropdown-toggle" style="background-color: #e3f2fd; color: black;" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     도서관 이용
                 </a>
-
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                     <a class="dropdown-item" href="/good/unified_search">사서 추천 도서</a>
                     <a class="dropdown-item" href="/book/new_unified_search">신간 도서</a>
@@ -86,11 +89,11 @@
             </div>
 
             <div class="dropdown show">
-                <a class="btn dropdown-toggle" style="background-color: #e3f2fd; color: dodgerblue;" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="btn dropdown-toggle" style="background-color: #e3f2fd; color: black;" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     도서관 정보
                 </a>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                    <a class="dropdown-item" href="/library_introduce">도서관 소개</a>
+
                     <a class="dropdown-item" href="/notice/unified_search">공지 사항</a>
                 </div>
             </div>
@@ -157,27 +160,14 @@
                     <div class="row">
                         <div class="col-lg-6 h-100 text-center text-lg-start my-auto">
                             <ul class="list-inline mb-2">
-                                <li class="list-inline-item"><a href="#!">About</a></li>
-                                <li class="list-inline-item">⋅</li>
-                                <li class="list-inline-item"><a href="#!">Contact</a></li>
-                                <li class="list-inline-item">⋅</li>
-                                <li class="list-inline-item"><a href="#!">Terms of Use</a></li>
-                                <li class="list-inline-item">⋅</li>
-                                <li class="list-inline-item"><a href="#!">Privacy Policy</a></li>
+
+
                             </ul>
-                            <p class="text-muted small mb-4 mb-lg-0">&copy; Your Website 2024. All Rights Reserved.</p>
+                            <p class="text-muted small mb-4 mb-lg-0">&copy; Domi's Library 2024. All Rights Reserved.</p>
                         </div>
                         <div class="col-lg-6 h-100 text-center text-lg-end my-auto">
                             <ul class="list-inline mb-0">
-                                <li class="list-inline-item me-4">
-                                    <a href="#!"><i class="bi-facebook fs-3"></i></a>
-                                </li>
-                                <li class="list-inline-item me-4">
-                                    <a href="#!"><i class="bi-twitter fs-3"></i></a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="#!"><i class="bi-instagram fs-3"></i></a>
-                                </li>
+
                             </ul>
                         </div>
                     </div>

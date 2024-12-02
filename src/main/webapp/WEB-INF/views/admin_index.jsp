@@ -33,17 +33,15 @@
     <div class="container px-4 px-lg-5">
         <!-- Heading Row-->
         <div class="row gx-4 gx-lg-5 align-items-center my-5">
-            <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="assets/img/admin_wallpaper.jpg" alt="..." /></div>
+            <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="assets/img/schoolFullLogo.jpg" alt="..." /></div>
             <div class="col-lg-5">
                 <h1 class="font-weight-light">DOMI's Library<br /> Admin Page</h1>
-                <p>관리자님 안녕하세요! <br /> 관리자님의 행복한 하루를 기원합니다.</p>
             </div>
         </div>
         <!-- Call to Action-->
         <div class="card text-white bg-danger my-5 py-4 text-center">
             <div class="card-body">
                 <h3>
-                    <p class="text-white m-0">FACE THE FEAR, MAKE THE FUTURE.</p>
                 </h3>
             </div>
         </div>

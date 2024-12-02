@@ -31,18 +31,18 @@
 										<div class="form-floating mb-3">
 											<input class="form-control" id="inputEmail" type="email"
 												placeholder="name@example.com" name="inputEmail" /> <label
-												for="inputEmail">Email address</label>
+												for="inputEmail">이메일 주소</label>
 										</div>
 										<div class="form-floating mb-3">
 											<input class="form-control" id="inputPassword"
 												type="password" placeholder="Password" name="inputPassword" />
-											<label for="inputPassword">Password</label>
+											<label for="inputPassword">비밀번호</label>
 										</div>
 										<div
 											class="d-flex align-items-center justify-content-between mt-4 mb-0">
 											<a class="small" href="/member/forgotPwd">Forgot
 												Password?</a> <input type="submit" class="btn btn-primary"
-												value="Login" />
+												value="로그인" />
 										</div>
 									</form>
 								</div>
@@ -64,8 +64,7 @@
 						class="d-flex align-items-center justify-content-between small">
 						<div class="text-muted">Copyright &copy;  DOMI's Library 2024</div>
 						<div>
-							<a href="#">Privacy Policy</a> &middot; <a href="#">Terms
-								&amp; Conditions</a>
+
 						</div>
 					</div>
 				</div>
